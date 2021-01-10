@@ -10,19 +10,12 @@ import models.Size;
 import models.TShirt;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 
-public class Sort {//implements Comparator<TShirt> {
+public class Sort {
 
-//    @Override
-//    public int compare(TShirt tShirt1, TShirt tShirt2) {
-//        return new CompareToBuilder()
-//                .append(tShirt1.getSize(), tShirt2.getSize())
-//                .append(tShirt1.getColor(), tShirt2.getColor())
-//                .append(tShirt1.getFabric(), tShirt2.getFabric()).toComparison();
-//    }
+
 
     int partition(List<TShirt> arr, int low, int high, int sortByAttribute, int sortingType) {
         TShirt pivot = arr.get(high);
