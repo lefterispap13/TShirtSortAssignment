@@ -93,14 +93,34 @@ public class TShirt {
         return true;
     }
 
+//    @Override
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        sb.append("TShirt{name=").append(name);
+//        sb.append(", color=").append(color);
+//        sb.append(", size=").append(size);
+//        sb.append(", fabric=").append(fabric);
+//        sb.append('}');
+//        return sb.toString();
+//    }
+
+
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("TShirt{name=").append(name);
-        sb.append(", color=").append(color);
-        sb.append(", size=").append(size);
-        sb.append(", fabric=").append(fabric);
-        sb.append('}');
-        return sb.toString();
+        return "TShirt{" +
+                "name='" + name + '\'' +
+                ", color=" + color +
+                ", size=" + size +
+                ", fabric=" + fabric +
+                '}';
+    }
+
+    public String print(){
+        return "TShirt{" +
+                "name='" + name + '\'' +
+                ", color=" + color +
+                ", size=" + size +
+                ", fabric=" + fabric +
+                '}'+"\n";
     }
 }

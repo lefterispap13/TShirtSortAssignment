@@ -6,6 +6,7 @@
 package models;
 
 import java.nio.charset.Charset;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 
@@ -33,6 +34,8 @@ public class RandomTShirt extends TShirt implements Comparator<RandomTShirt> {
             return (generatedString);
     }
 
+
+
     @Override
     public int compare(RandomTShirt o1, RandomTShirt o2) {
         int result = -254;
@@ -47,6 +50,4 @@ public class RandomTShirt extends TShirt implements Comparator<RandomTShirt> {
         }
         return(result);
     }
-
-   
 }
