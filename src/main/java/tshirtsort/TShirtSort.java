@@ -32,7 +32,7 @@ public class TShirtSort {
 
         
         List<RandomTShirt> randomTShirts = new ArrayList<>();
-        for(int i = 0; i < 40; i++) {
+        for(int i = 0; i < 10; i++) {
             randomTShirts.add(new RandomTShirt());
         }
         System.out.println("----UnSorted------");
@@ -89,11 +89,11 @@ public class TShirtSort {
                                                                 1: depending on Color
                                                             and 2: depending on Fabric
          */
-//        Timer bucketTimer = new Timer();  //timer
-//        List<RandomTShirt> randomTShirts4=new ArrayList<>(randomTShirts);
-//        busRand.bucketSortTShirts(randomTShirts4,true,2);
-//        bucketTimer.stop();
-//        System.out.println("===Bucket Sort Time: " + bucketTimer.elapsedTime()+" ===");
+        Timer bucketTimer = new Timer();  //timer
+        List<RandomTShirt> randomTShirts4=new ArrayList<>(randomTShirts);
+        busRand.bucketSortTShirts(randomTShirts4,true,0);
+        bucketTimer.stop();
+        System.out.println("===Bucket Sort Time: " + bucketTimer.elapsedTime()+" ===");
 
 
         /* This is what we need to sort the list with the random numbers
